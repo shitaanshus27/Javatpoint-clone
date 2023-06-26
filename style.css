@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #f5f5f4;
+}
+
+.search-bar {
+  margin-top: 5px;
+  margin-left: 4rem;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.search-bar > input {
+  width: 700px;
+  height: 30px;
+}
+
+.search-icon {
+  width: 4rem;
+}
+.navbar {
+  background-color: #4caf50;
+  height: 2.8rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  height: 100%;
+  font-size: 15px;
+  gap: 0.1rem;
+  margin-left: -7rem;
+}
+
+ul > li > img {
+  height: 15px;
+}
+
+ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.yt-channel {
+  display: flex;
+  height: 3rem;
+  background-color: white;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-left: 0.5rem;
+  align-items: center;
+  padding: 1rem;
+  font-family: erdana, helvetica, arial, sans-serif;
+  color: #610b4b;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.div-img {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  gap: 0.1rem;
+}
+
+.div-img > img {
+  width: 50%;
+  padding: 20px;
+}
+
+.main {
+  display: flex;
+}
+
+.left {
+  width: 60%;
+}
+.right {
+  width: 40%;
+}
+
+.latest-tutorials {
+  width: 100%;
+  background-color: white;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  padding: 20px;
+}
+
+.topic {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.latest-tutorials > h3 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #610b4b;
+}
+
+.topic1 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 20%;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  padding: 20px;
+}
+
+.right > h3 {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.right > h3 > a {
+  color: green;
+  text-decoration: none;
+}
+
+.feedback {
+  margin-top: 10px;
+  width: 80%;
+  height: 3.5rem;
+  text-align: center;
+  border-left: 7px solid #95cc97;
+  background: #f6f9ee;
+  padding: 10px;
+  margin-left: 2rem;
+}
+
+.feedback > h3 {
+  font-family: erdana, helvetica, arial, sans-serif;
+  color: #610b4b;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+.list {
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+.list > ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  color: green;
+}
+
+.author-view {
+  width: 100%;
+  background-color: white;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  padding: 30px;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.author-img {
+  width: 80%;
+  border-radius: 15px;
+  height: 160px;
+}
+
+.author-img > img {
+  width: 100%;
+  border-radius: 25px;
+  height: 100%;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.author-info > .name {
+  font-family: inter-bold, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.7;
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+}
+.author-info > .about-me {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  color: green;
+}
+
+.services {
+  width: 100%;
+  margin-top: 10px;
+  background-image: linear-gradient(145deg, #52a2fc, #480fcc);
+  color: white;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.training {
+  background-image: linear-gradient(145deg, #dc8140, #b16b15);
+  width: 100%;
+  margin-top: -20px;
+  color: white;
+  line-height: 28px;
+}
+
+.bottom {
+  background-color: #4caf50;
+  padding: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+.sec1 {
+  display: flex;
+  flex-direction: column;
+}
+.sec1 > ol {
+  margin-left: 10px;
+  list-style-type: none;
+}
+
+.sec1 > ol > li {
+  margin: 10px;
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  background-color: #3b753d;
+  padding: 40px;
+}
