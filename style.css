@@ -4,20 +4,23 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
 .wrapper {
   background-color: #f5f5f4;
 }
 
 .search-bar {
-  margin-top: 5px;
+  margin-top: 0.4rem;
   margin-left: 4rem;
-  margin-bottom: 10px;
-  padding: 15px;
+  margin-bottom: 0.7rem;
+  padding: 1rem;
 }
 
 .search-bar > input {
-  width: 700px;
-  height: 30px;
+  width: 43.75rem;
+  height: 1.5rem;
 }
 
 .search-icon {
@@ -31,6 +34,28 @@
   top: 0;
   z-index: 1;
 }
+
+.navbar1 {
+  background-color: #4caf50;
+  height: 2.8rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  display: none;
+}
+
+.navbar1 > div {
+  height: 0.2rem;
+  width: 2rem;
+  background-color: aquamarine;
+}
+
 ul {
   display: flex;
   justify-content: space-evenly;
@@ -199,13 +224,13 @@ ul > li {
   color: #333;
   line-height: 1.7;
   position: absolute;
-  right: 30px;
-  bottom: 50px;
+  right: 1.9rem;
+  bottom: 2rem;
 }
 .author-info > .about-me {
   position: absolute;
-  right: 30px;
-  bottom: 30px;
+  right: 1.9rem;
+  bottom: 1rem;
   color: green;
 }
 
@@ -256,4 +281,65 @@ ul > li {
   text-align: center;
   background-color: #3b753d;
   padding: 40px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .search-bar > input {
+    width: 20rem;
+    height: 1.5rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+  .main {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .left > h3 {
+    width: 100%;
+  }
+
+  .special {
+    margin-left: 1rem;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .navbar1 {
+    display: flex;
+  }
+
+  .header-img {
+    margin-left: 6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+  .search-bar > input {
+    width: 80%;
+    height: 1.5rem;
+  }
+  .search-bar {
+    margin-top: 1rem;
+    margin-left: 0.1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .search-icon {
+    width: 2rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
 }
