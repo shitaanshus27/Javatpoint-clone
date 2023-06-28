@@ -64,7 +64,6 @@ ul {
   height: 100%;
   font-size: 15px;
   gap: 0.1rem;
-  margin-left: -7rem;
 }
 
 ul > li > img {
@@ -203,7 +202,7 @@ ul > li {
 .author-img {
   width: 80%;
   border-radius: 15px;
-  height: 160px;
+  height: 10rem;
 }
 
 .author-img > img {
@@ -283,6 +282,12 @@ ul > li {
   padding: 40px;
 }
 
+.topic1:hover {
+  transition: all 0.1s ease-in;
+  box-shadow: rgba(99, 99, 99, 0.3) 0 4px 16px 0;
+  color: red;
+}
+
 @media only screen and (max-width: 1080px) {
   .search-bar > input {
     width: 20rem;
@@ -341,5 +346,17 @@ ul > li {
 
   .bottom {
     flex-direction: column;
+  }
+  .author-view {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .author-img {
+    width: 40%;
+  }
+
+  .list {
+    margin-left: 2rem;
   }
 }
